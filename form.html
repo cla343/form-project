@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="form.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+    <div class="content">
+        <div class="leftbox">
+            <img src="ferns.jpg" alt="ferns" class="ferns">
+            <div class="overlay">
+                <img src="odin-lined.png" alt="Odin Logo" class="odin">
+                <h1>ODIN</h1>
+            </div>
+        </div>
+        <div class="rightbox">
+            <div class="rightbox-1">
+                <h4>This is not real! I do not care what you type in here! Upload your nudes, no one will see! Sign up <i>now</i> to get started.</h4>
+                <br>
+                <h4>P.S. no dick pics</h4>
+            </div>
+            <div class="rightbox-2">
+                <form id="myForm">
+                    <h4>Let's do this!</h4>
+                    <div class="flex">
+                        <div class="form-column">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}\[\]:;&quot;&lt;&gt;,.\?/\-]).{6,12}$" required>
+                    </div>
+                </div>
+                <div class="form-column">
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}\[\]:;&quot;&lt;&gt;,.\?/\-]).{6,12}$" required>
+                    </div>    
+                </div>
+            </div>
+                </form>
+            </div>
+            <div class="rightbox-3">
+                <button>Create Account</button>
+                <p>Already have an account? <a href>Log in</a></p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

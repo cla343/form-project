@@ -1,0 +1,131 @@
+body, html {
+    height: 100%; /* Ensure the body and html cover the full height */
+    margin: 0; /* Remove any default margin */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    background-color: black; /* Black background for the whole screen */
+}
+
+h1, h4 {
+    margin: 0; /* Avoid pushing content out with margins */
+}
+
+@font-face {
+    font-family: 'NorseBold'; /* Name of the font */
+    src: url('Norse-Bold.otf') format('opentype'); /* Path to the font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.overlay {
+    margin-top: 200px;
+    position: absolute; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: white;
+    font-family: 'NorseBold', sans-serif;
+    font-size: 4rem;
+}
+
+img {
+    max-width: 100%; /* Scale images to fit */
+    height: 100%;
+    }
+
+img.ferns {
+    position: absolute; /* Ensure it stays within the stacking context */
+    z-index: 0;
+    }
+
+img.odin {
+    height: 30%;
+    width: 30%;
+    }
+
+.leftbox {
+    width: 30%;
+    background-color: #eaeaea; /* Light background color */
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.rightbox {
+    width: 70%;
+    background-color: rgb(243, 240, 240); /* Another light color */
+    height: 100vh;
+}
+
+.rightbox-1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.flex {
+    display: flex;
+    gap: 40px;
+}
+
+.rightbox-1, .rightbox-2, .rightbox-3{
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.rightbox-2 {
+    background-color: white;
+    box-shadow: 10px 10px 15px rgba(0.1, 0, 0, 0.1);
+} 
+
+button {
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    background-color: #596D48;
+    margin: 15px 0;
+    box-shadow: 10px 10px 15px rgba(0.1, 0, 0, 0.1);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.form-submitted input:invalid {
+    border: 1px solid red;
+}
+
+input {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+input:focus {
+    box-shadow: 5px 5px 10px rgba(0, 0, 255, 0.3);
+    border: 1px solid blue;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
